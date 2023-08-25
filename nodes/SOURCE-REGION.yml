@@ -1,0 +1,64 @@
+steps:
+  REGION-0584d55c-a53e-475d-ad36-6e8d1ac98510:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 770644ac-ed8f-48cc-a0d7-7220fcc5b0ef
+              stepCounter: 0584d55c-a53e-475d-ad36-6e8d1ac98510
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: aed752f7-53b4-43d6-a4ec-e9d5534fab75
+              stepCounter: 0584d55c-a53e-475d-ad36-6e8d1ac98510
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1a97b2b4-a13c-4a75-b987-b20d0de825e9
+              stepCounter: 0584d55c-a53e-475d-ad36-6e8d1ac98510
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 0584d55c-a53e-475d-ad36-6e8d1ac98510
