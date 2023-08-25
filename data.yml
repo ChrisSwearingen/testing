@@ -3,9 +3,15 @@ installedPackages: {}
 jobs: {}
 locations:
   DESTINATION:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: CHRIS_EDW
+        schema: PROD_RAW
   SOURCE:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: COALESCE_SAMPLE_DATABASE
+        schema: TPCH_SF001
 macros: {}
 packages: {}
 projects: {}
